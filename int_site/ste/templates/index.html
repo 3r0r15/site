@@ -9,40 +9,25 @@
     </div>
     <div class="navigation">
     <a href="/">Главная страница</a>
-    <a href="/product">Товары</a>
+    <a href="/products">Товары</a>
     <a href="/disc">Уценка</a>
     </div>
 </div>
 <div class="productsList">
-
-<div class="product">
-    <img src="https://xiegu.eu/wp-content/uploads/sites/4/2021/12/X6100-ON.jpg">
+    {% for products in prod %}
+<div class="products">
+    <img class="productPreview" src="{{ products.image_Url }}">
     <div>
-        <h2> Xiegu X6100 </h2>
-    <p> Радиолюбительский трансивер X6100 - это новейшая разработка компании XIEGU, которая собрала в себе все достоинства предыдущих разработок компании. X6100 это компактный, мобильный, удобный, SDR (программно-определяемое радио) трансивер,
-        работающий на всех КВ диапазонах включая  диапазон 50 Мгц. Он имеет 10-ваттную (5 Вт от аккумулятора) выходную мощность, великолепный автоматический встроенный тюнер, большой4-дюймовый цветной дисплей (разрешение 800*480), внутреннюю
-        литиевую аккумуляторную батарею 8,3 В, 3,5 Ач. </p>
+        <h2> {{ products.name}}</h2>
+    <p> {{ products.description }} </p>
 
     </div>
     <div class="priceSection">
-    <h3> Товара нет</h3>
+    <h3> {{ products.price }} ₽</h3>
     <button>
         Купить
     </button>
     </div>
 </div>
-<div class="product">
-    <img src="https://www.norm3.com/wp-content/uploads/2022-05-22-20.40.39-IMG_20220522_204037W-1200x900.jpg">
-    <div>
-       <h2> Трансивер Xiegu G90 (SDR) </h2>
-    <p>  Трансивер Xiegu G90 - это дальнейшее развитие очень успешной модели Xiegu X108G. Тем не менее G90 – это новый дизайн, новая схемотехника на основе SDR технологии,
-        встроенный автоматический антенный тюнер, новый интерфейс управления и высокопроизводительный узкополосный преселектор ESC. </p>
-    </div>
-     <div class="priceSection">
-    <h3> Товара нет</h3>
-    <button>
-        Купить
-    </button>
-     </div>
-</div>
+    {% endfor %}
 </div>

@@ -1,23 +1,26 @@
     @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
 
     h1 {
+        font-family: LXGW WenKai TC;
+    }
+    .logoText {
         color: CornflowerBlue;
+        font-family: LXGW WenKai TC;
     }
-    html {
-        #background: url(https://i.pinimg.com/564x/1f/5a/aa/1f5aaac1326317613350adc5573f0c94.jpg);
+    h3 {
+        font-family: LXGW WenKai TC;
     }
-
     *{
         font-family: bookman old style;
     }
-    img {
+    .productPreview {
         max-width: 300px;
         max-height: 300px;
     }
 
-    .product {
+    .products {
         display: flex;
-        border: 2px solid;
+        border: 2px solid #178bcb ;
         margin-top: 20px;
         border-radius: 15px;
         padding: 10px;
@@ -49,7 +52,7 @@
     }
 
     h2{
-        color:CornflowerBlue;
+        #color:CornflowerBlue;
     }
 
     a:hover {
@@ -72,9 +75,9 @@
         width: 150px;
         #width: 100%;
         background-color: white;
-        border: 2px solid black;
+        border: 2px solid #178bcb;
         padding: 0;
-        border-radius: 10px;
+        border-radius: 20px;
         cursor: pointer;
         font-size: 25px;
     }
@@ -88,4 +91,18 @@
         width: 100%;
         text-align: center;
         margin-left: 20px;
+    }
+    .productCard {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        flex-direction: row;
+    }
+    .productDetails {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
     }
