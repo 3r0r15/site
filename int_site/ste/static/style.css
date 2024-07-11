@@ -101,8 +101,21 @@
         flex-direction: row;
     }
     .productDetails {
-        width: 50%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
 
+    }
+    .productImg {
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .productDes {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 11px;
+    }
+    .productInfo {
+        margin-left: 10px;
     }

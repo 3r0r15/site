@@ -13,18 +13,18 @@
     </div>
 </div>
 <div class="productCard">
-    <img src="https://www.midland-rus.ru/uploads/original/H1Y0GN4W.jpg">
+    <img class="productImg" src="{{ products.image_Url }}">
     <div class="productInfo">
-        <h1> название:</h1>
-        <h3>цена</h3>
+        <h1> {{ products.name }}</h1>
+        <h3>{{ products.price }}₽</h3>
         <button>
             Купить
         </button>
     </div>
 </div>
-<div class="productDetails">
+<div class="productDes">
     <h1>Описание:</h1>
-    <p>
-        что-то
-    </p>
+    <h1>{{ products.description }}</h1>
+    <h1>Характеристики:</h1>
+    <h1>{{ products.range }}</h1>
 </div>
